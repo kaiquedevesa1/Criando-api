@@ -1,5 +1,7 @@
 import { createUser, listUsers } from "../../../lib/helper-user"; // importando uma funcao para dentro dessa rota
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   // estou mandando pra fora aqui eu to dizendo pegue a minha resposta(Response.json) que tem o parametro users ou seja quando chegar la vai retornar tudo o que tem dentro de users
   return Response.json({ users: listUsers() });
